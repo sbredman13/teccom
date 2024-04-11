@@ -4,9 +4,10 @@
 # Решение 1. Для случаев, где нужно генерировать диапозон чисел по возрастанию.
 def list_gen(min_num, max_num):
     if min_num > max_num:
-        return [i for i in range(max_num, min_num + 1)]
+        gen_list = [i for i in range(max_num, min_num + 1)]
     else:
-        return [i for i in range(min_num, max_num + 1)]
+        gen_list = [i for i in range(min_num, max_num + 1)]
+    return gen_list
 
 
 if __name__ == "__main__":
